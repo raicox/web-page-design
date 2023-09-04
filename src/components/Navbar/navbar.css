@@ -1,0 +1,73 @@
+/* Estilos para la barra de navegación (nav-header) */
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    z-index: 100;
+}
+
+/* Estilos para el logotipo en la barra de navegación */
+.logo img {
+    width: 150px;
+    margin: 25px 0 0 20px;
+    position: fixed;
+    top: 10px;
+}
+
+/* Estilos para la lista de enlaces en la barra de navegación */
+.list-container {
+    display: flex;
+    z-index: 1000;
+}
+
+/* Estilos para la lista desordenada (ul) en la barra de navegación */
+.nav-header ul {
+    list-style: none;
+    margin-top: 25px;
+    text-align: center;
+}
+
+/* Estilos para los elementos de la lista en la barra de navegación */
+.nav-header ul li {
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 18px;
+    margin: 15px 25px 15px 15px;
+    width: 150px;
+    height: 22px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-image: linear-gradient(45deg, #027AFF 0%, #30C3C7 100%);
+    transition: 0.10s;
+}
+
+/* Estilos para los elementos de la lista cuando se hace clic (activo) */
+.nav-header ul li:active {
+    font-size: 15px;
+}
+
+/* Estilos para los elementos de la lista cuando se pasa el mouse por encima (hover) */
+.nav-header ul li:hover {
+    background-image: linear-gradient(45deg, #fefeff 0%, #ffffff 100%);
+    color: rgb(0, 0, 0);
+}
+
+/* Estilos para los enlaces (links) dentro de la barra de navegación */
+.link {
+    text-decoration: none;
+    color: rgb(3, 3, 3);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+}
+
+/* Estilos para los enlaces cuando se pasa el mouse por encima (hover) */
+.link:hover {
+    background-image: linear-gradient(45deg, #fefeff 0%, #ffffff 100%);
+    color: rgb(0, 0, 0);
+}
+

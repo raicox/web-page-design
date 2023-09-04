@@ -1,0 +1,93 @@
+
+/* Estilos para la imagen de fondo en la sección "About" */
+.about-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    opacity: 0; /* Inicialmente invisible */
+}
+
+/* Estilo para la superposición de la imagen de fondo */
+.about-overlay {
+    background: url(../../assets/man-king.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+
+/* Contenedor de texto en la sección "About" */
+.text-container {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 20px;
+    position: absolute;
+    top: 20%;
+    right: -15%; 
+    z-index: 2;
+    transform: translate(0, -20px); /* Desplaza ligeramente hacia arriba */
+}
+
+/* Estilos para el texto en la sección "About" */
+.about-text {
+    text-align: center;
+    width: 500px;
+    height: 50px;
+    margin: 50px 0;
+    color: white;
+    transform: translateX(-200px); /* Transformaciones para el efecto inclinado y desplazado */
+    text-transform: uppercase;
+    opacity: 0; /* Inicialmente invisible */
+}
+
+/* Estilos para el título en la sección "About" */
+.about-text h1 {
+    text-align: start;
+    font-size: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    font-family: 'Roboto';
+}
+
+/* Estilos para el párrafo en la sección "About" */
+.about-text p {
+    text-align: start;
+    font-size: 15px;
+    font-family: 'Roboto';;
+}
+
+/* Contenedor del botón en la sección "About" */
+.container-button {
+    position: absolute;
+    right: 40%;
+    bottom: -280%;
+    z-index: 2;
+}
+
+/* Estilos para el botón en la sección "About" */
+.container-button button {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: .3s;
+}
+
+/* Estilos para el botón al pasar el ratón */
+.container-button button:hover {
+    background-color: white;
+    transform: scale(1.1); /* Escala ligeramente el botón */
+}
+
+/* Estilos para el botón al hacer clic */
+.container-button button:active {
+    transform: scale(1); /* Restablece la escala al hacer clic */
+}
+

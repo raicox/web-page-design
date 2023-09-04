@@ -1,0 +1,104 @@
+/* Establece el fondo principal de la página */
+.main-background {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+/* Contenedor para centrar contenido en la página */
+.container-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+
+/* Estilo del título dentro del contenedor */
+.container-block h1 {
+    font-family: 'Monument';
+    color: white;
+    font-size: 100px;
+    text-transform: uppercase;
+    opacity: 0; /* Inicialmente invisible */
+    transform: skewX(10deg) translateX(-200px); /* Efecto de inclinación y traslación */
+}
+
+/* Imagen en la parte inferior derecha de la página */
+.block-image {
+    position: absolute;
+    bottom: -15%;
+    right: -35%;
+    width: 90%;
+    height: 90%;
+    z-index: 100;
+    opacity: 0; /* Inicialmente invisible */
+}
+
+/* Establece un fondo de imagen para un elemento con clase .block-overlay */
+.block-overlay {
+    background: url(../../assets/hands-block.png) no-repeat;
+    background-size: contain;
+}
+
+/* Establece un fondo de imagen para un elemento con clase .block-fallbox */
+.block-fallbox {
+    background: url(../../assets/parachute.png) no-repeat;
+    background-size: contain;
+}
+
+/* Botón con clase .box-button */
+.box-button {
+    position: absolute;
+    background-color: transparent;
+    width: 100px;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 18px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    bottom: 80px;
+    left: 62px;
+    transform: rotate(-12deg);
+    cursor: pointer;
+    transition: .3s; /* Transición de 0.3 segundos al hacer clic */
+}
+
+/* Efecto de escala al hacer clic en el botón */
+.box-button:active {
+    scale: 0.5;
+}
+
+/* Cuatro elementos con diferentes posiciones y opacidades */
+.block-box-first,
+.block-box-second,
+.block-box-third,
+.block-box-fourth {
+    position: absolute;
+    width: 170px;
+    height: 290px;
+    z-index: 100;
+    opacity: 0; /* Inicialmente invisibles */
+}
+
+/* Posiciones de los cuatro elementos en la página */
+.block-box-first {
+    top: -400px;
+    right: 40%;
+}
+
+.block-box-second {
+    top: -300px;
+    left: 150px;
+}
+
+.block-box-third {
+    top: -600px;
+    left: 450px;
+}
+
+.block-box-fourth {
+    top: -500px;
+    left: 420px;
+}
